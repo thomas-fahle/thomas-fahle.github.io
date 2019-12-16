@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+
+  {% include head.html %}
+
+<body>
+
+    <div role="banner">
+    {% include header.html %}
+    </div>
+
+    <div class="row">
+
+     <!-- Left Column - Blog -->
+     <div class="columns large-9 medium-12 small-12">
+      <div role="main">
+        {{ content }}
+      </div>
+     </div> <!-- Left column -->
+
+     <!-- Right Column - Sidebar -->
+     <div class="columns large-3 medium-12 small-12">
+      <div role="navigation">
+       {% include sidebar.html %}
+      </div>
+     </div> <!-- Right Column -->
+
+   </div> <!-- row -->
+
+   <div role="contentinfo">
+    {% include footer.html %}
+   </div>
+
+</body>
+</html>
+

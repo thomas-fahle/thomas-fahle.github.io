@@ -1,0 +1,73 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | replace: '"' '' | truncate: 160 }}{% else %}{{ site.description | strip_newlines }}{% endif %}" />
+
+  <meta name="keywords" content="Freiberufler, Perl, Programmierung, SystemAdministrator, Linux" />
+  <meta name="Content-Language" content="German, Deutsch, de, at, ch" />
+
+  <meta name="Author" content="{% if page.author_full_name %}{{ page.author_full_name }}{% else %}{{ 'Thomas Fahle' }}{%endif%}" />
+
+  <meta property="og:site_name" content="Thomas Fahle"/>
+  <meta property="og:type" content="article" />
+  <meta property="og:locale" content="de_DE"/>
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+  <meta property="og:description" content="{{ site.description | strip_newlines }}" />
+
+  <meta name="generator" content="Jekyll v{{ jekyll.version }}" />
+
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+
+  <link rel="stylesheet" href="/css/foundation.min.css" type="text/css" />
+
+  {% if page.previous.url %} <link rel="prev" href="{{page.previous.url}}" /> {% endif %}
+  {% if page.next.url %} <link rel="next" href="{{page.next.url}}" /> {% endif %}
+
+
+<style>
+
+body,h1,h2,h3,h4,h5 {
+        font-family: trebuchet ms;
+}
+
+#header { 
+    border-color: #111343;  
+    background: #3c419a url(/assets/images/header.gif) repeat-x bottom right;
+    border-top-width: 10px;
+    border-top-style: solid;
+}
+
+#header-content {
+    margin: 30px 30px 40px 20px;
+}
+
+#header-name {
+    color: #fff; 
+    font-size: 34px;
+    font-weight: bold;
+}
+
+#header-description {
+    color: #fff;
+    margin: 0;
+}
+
+#header a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#header a:hover {
+    text-decoration: underline;
+}
+
+</style>
+
+</head>
+
+

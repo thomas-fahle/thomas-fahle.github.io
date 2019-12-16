@@ -1,0 +1,3 @@
+# robots.txt for http://thomas-fahle.de/
+User-agent: *
+Sitemap: http://thomas-fahle.de/sitemap.xml

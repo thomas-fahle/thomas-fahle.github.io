@@ -1,0 +1,20 @@
+# Site settings
+title: Thomas Fahle
+email: info@thomas-fahle.de
+description: Senior Linux IT Systems Engineer - Expertise in Linux and Perl
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://thomas-fahle.de" # the base hostname & protocol for your site
+#url: "http://127.0.0.1:4000" # the base hostname & protocol for your site
+twitter_username: thomasfahle
+github_username:  thomasfahle
+
+# Build settings
+markdown: kramdown
+
+keep_files:
+ - assets
+ - talks
+ - css
+
+plugins:
+  - jekyll-sitemap

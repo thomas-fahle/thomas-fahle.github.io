@@ -1,0 +1,29 @@
+---
+# This layout is used to redirect pages, if you moved them.
+# Use the following settings in front matter:
+#
+# layout: redirect
+# sitemap: false
+# permalink: /old-location/
+# redirect_to:  /new-location/
+---
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<link rel="canonical" href="{{ page.redirect_to }}"/>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="refresh" content="5;url={{ page.redirect_to }}" />
+</head>
+<body>
+    <h1>Redirecting...</h1>
+    <p>
+     Diese Webseite finden Sie k&uuml;nftig an der Adresse: <a href="{{ page.redirect_to }}">{{ page.redirect_to }}</a>.
+    </p>
+    <p>
+     Sie werden in wenigen Sekunden weitergeleitet.
+    </p>
+    <p>
+     Klicken Sie bitte <a href="{{ page.redirect_to }}">hier</a>, falls Sie nicht automatisch weitergeleitet werden.
+    </p>
+</body>
+</html>
