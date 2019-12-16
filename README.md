@@ -1,2 +1,2 @@
 # thomas-fahle.github.io
-Source website thomas-fahle.de
+Source of website thomas-fahle.de
