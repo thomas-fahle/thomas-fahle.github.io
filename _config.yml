@@ -13,5 +13,5 @@ keep_files:
  - talks
  - css
 
-gems:
+plugins:
   - jekyll-sitemap
